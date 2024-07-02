@@ -1,4 +1,4 @@
-import React from 'react';
+'use client';
 
 const Main = () => {
   return (
@@ -12,12 +12,13 @@ const Main = () => {
             Join us for a spectacular event showcasing sustainable and
             eco-friendly fashion.
           </p>
-          <div
+
+          <a
             href="/about"
             className="mt-8 inline-block px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700"
           >
             Learn More
-          </div>
+          </a>
         </div>
       </section>
 
