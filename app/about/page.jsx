@@ -15,9 +15,9 @@ const page = () => {
             clothing industry, the pitfalls of fast fashion, and the importance
             of ethical labor practices. This will be done through engaging
             informational displays, and a runway show that features students
-            modeling "Quiet Luxury" looks from sustainable brands. Funds raised
-            will help My New Red Shoes to deliver programs that assist Bay Area
-            families facing financial hardship.
+            modeling &quot;Quiet Luxury&quot; looks from sustainable brands.
+            Funds raised will help My New Red Shoes to deliver programs that
+            assist Bay Area families facing financial hardship.
           </p>
         </div>
       </section>
@@ -43,11 +43,11 @@ const page = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold">AUDIENCE:</h2>
           <p className="mt-4 text-lg">
-            100+ Bay Area High-Wealth Families, Friends & Donors
+            100+ Bay Area High-Wealth Families, Friends &amp; Donors
           </p>
           <p className="mt-4 text-lg">DATE: October 6, 2024</p>
           <p className="mt-4 text-lg">
-            LOCATION: Peninsula Golf & Country Club
+            LOCATION: Peninsula Golf &amp; Country Club
           </p>
         </div>
       </section>
@@ -162,8 +162,8 @@ const page = () => {
                 channels, and more
               </li>
               <li>
-                Positive Brand Association: Promote your brand's reputation and
-                perception
+                Positive Brand Association: Promote your brand&apos;s reputation
+                and perception
               </li>
             </ul>
           </div>
@@ -197,30 +197,32 @@ const page = () => {
             <p className="mt-4 text-lg text-green-900">
               My New Red Shoes is currently seeking sustainable and ethical
               clothing elements to use as foundational pieces from which to
-              build “Quiet Luxury” runway looks. Items would be on loan to MNRS
-              for the event. We hope to show 50 runway looks. Featured looks
-              will “make a presence without making noise” during a narrated
-              runway show that will include information about and promotion of
-              the featured brands and/or designers.
+              build &quot;Quiet Luxury&quot; runway looks. Items would be on
+              loan to MNRS for the event. We hope to show 50 runway looks.
+              Featured looks will &quot;make a presence without making
+              noise&quot; during a narrated runway show that will include
+              information about and promotion of the featured brands and/or
+              designers.
             </p>
             <h3 className="mt-8 text-2xl font-bold text-green-700">
               OTHER WAYS TO SUPPORT THE EVENT:
             </h3>
             <ul className="mt-4 list-disc list-inside text-lg text-green-900">
               <li>
-                Donate a brand Gift Certificate to the event’s Silent Auction or
-                Raffle for a set dollar amount and/or for a specific service
-                (styling session, closet re-fresh, etc.)
+                Donate a brand Gift Certificate to the event&apos;s Silent
+                Auction or Raffle for a set dollar amount and/or for a specific
+                service (styling session, closet re-fresh, etc.)
               </li>
               <li>
-                Donate an in-kind item for the event’s Silent Auction or Raffle
+                Donate an in-kind item for the event&apos;s Silent Auction or
+                Raffle
               </li>
             </ul>
             <div className="mt-8 text-center">
-              <Link href="/donate">
-                <div className="inline-block px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700">
+              <Link href="https://www.google.com">
+                <a className="inline-block px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700">
                   Support Financially
-                </div>
+                </a>
               </Link>
             </div>
           </div>
