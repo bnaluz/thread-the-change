@@ -19,21 +19,21 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Link href="/" className="text-gray-700 hover:text-gray-900">
-              Home
+            <Link href="/about" className="text-gray-700 hover:text-gray-900">
+              About
             </Link>
             <Link
               href="/register"
               className="text-gray-700 hover:text-gray-900"
             >
-              Register
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900">
-              About
+              Tickets
             </Link>
             <Link href="/donate" className="text-gray-700 hover:text-gray-900">
-              Donate
+              Sponsor
             </Link>
+            {/* <Link href="/learn" className="text-gray-700 hover:text-gray-900">
+              Learn
+            </Link> */}
           </div>
           <div className="md:hidden">
             <button

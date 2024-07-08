@@ -12,7 +12,7 @@ const page = () => {
           difference.
         </p>
         <a
-          href="https://www.google.com"
+          href="https://mynewredshoes.org/"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 inline-block px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700"

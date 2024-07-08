@@ -1,12 +1,32 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 
-const page = () => {
+const Page = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('slide-in-visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const elements = document.querySelectorAll('.slide-in');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-green-100">
       {/* Event Overview */}
-      <section className="bg-green-700 text-white py-20">
+      <section className="bg-green-700 text-white py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold">THREAD THE CHANGE</h1>
           <p className="mt-4 text-lg">
@@ -23,7 +43,7 @@ const page = () => {
       </section>
 
       {/* Event Format */}
-      <section className="py-20">
+      <section className="py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-green-700">EVENT FORMAT:</h2>
@@ -39,7 +59,7 @@ const page = () => {
       </section>
 
       {/* Audience and Details */}
-      <section className="bg-green-700 text-white py-20">
+      <section className="bg-green-700 text-white py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold">AUDIENCE:</h2>
           <p className="mt-4 text-lg">
@@ -53,7 +73,7 @@ const page = () => {
       </section>
 
       {/* Event Goals */}
-      <section className="py-20">
+      <section className="py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-green-700">EVENT GOALS</h2>
@@ -86,7 +106,7 @@ const page = () => {
       </section>
 
       {/* Sustainability Goals */}
-      <section className="bg-green-700 text-white py-20">
+      <section className="bg-green-700 text-white py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold">SUSTAINABILITY GOALS</h2>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -135,7 +155,7 @@ const page = () => {
       </section>
 
       {/* Supporting the Event */}
-      <section className="py-20">
+      <section className="py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold text-green-700">
@@ -171,7 +191,7 @@ const page = () => {
       </section>
 
       {/* Additional Support Information */}
-      <section className="py-20">
+      <section className="py-20 slide-in">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-green-700">SPONSORSHIPS:</h3>
@@ -219,10 +239,10 @@ const page = () => {
               </li>
             </ul>
             <div className="mt-8 text-center">
-              <Link href="https://www.google.com">
-                <a className="inline-block px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700">
+              <Link href="https://mynewredshoes.org/" target="_blank">
+                <div className="inline-block px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700">
                   Support Financially
-                </a>
+                </div>
               </Link>
             </div>
           </div>
@@ -232,4 +252,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
