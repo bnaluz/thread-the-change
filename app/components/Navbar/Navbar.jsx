@@ -61,9 +61,9 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="flex flex-col space-y-1">
-              <Link href="/" className="text-gray-700 hover:text-gray-900 py-2">
+              {/* <Link href="/" className="text-gray-700 hover:text-gray-900 py-2">
                 Home
-              </Link>
+              </Link> */}
               <Link
                 href="/about"
                 className="text-gray-700 hover:text-gray-900 py-2"
@@ -74,13 +74,13 @@ const Navbar = () => {
                 href="/register"
                 className="text-gray-700 hover:text-gray-900 py-2"
               >
-                Register
+                Tickets
               </Link>
               <Link
                 href="/donate"
                 className="text-gray-700 hover:text-gray-900 py-2"
               >
-                Donate
+                Sponsor
               </Link>
             </div>
           </div>
