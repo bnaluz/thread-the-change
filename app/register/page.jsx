@@ -1,10 +1,32 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 
-const page = () => {
+const Page = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => {
+        observer.unobserve(el);
+      });
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-green-100 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg text-center fade-in">
         <h1 className="text-3xl font-bold text-green-700">
           Register for the Event
         </h1>
@@ -25,4 +47,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
