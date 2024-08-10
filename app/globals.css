@@ -7,14 +7,14 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, #60b3c7, #82c9d1, #60b3c7);
+  background: linear-gradient(to right, #fcf46e 10%, #82c9d1 30%, #60b3c7 70%);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .section {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 

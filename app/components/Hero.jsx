@@ -19,6 +19,7 @@ const HeroSection = () => {
         backgroundImage: "url('/runway.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center top',
+        paddingTop: 'calc(4rem + 10vh)',
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -31,11 +32,14 @@ const HeroSection = () => {
             backgroundPosition: 'center top',
           }}
         ></div>
-        <div className="relative text-center text-white ">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-wider text-[#FDF46E] leading-none">
-            Thread the <br /> CHANGE
-          </h1>
-          <p className="mt-4 text-lg md:text-xl lg:text-2xl italic leading-tight">
+        <div className="relative text-center text-white">
+          <img
+            src="/ttcLogo.png"
+            alt="Thread the Change"
+            className="mx-auto max-w-full h-auto"
+            style={{ maxHeight: '15rem' }}
+          />
+          <p className="mt-4 text-xl md:text-2xl lg:text-4xl font-brush-script leading-tight">
             A fashion fundraiser supporting the work of My New Red Shoes
           </p>
           <p className="mt-8 text-base md:text-lg lg:text-xl leading-relaxed">
@@ -43,7 +47,7 @@ const HeroSection = () => {
             Peninsula Golf & Country Club <br />
             701 Madera Drive, San Mateo, CA 94403
           </p>
-          <p className="mt-6 text-base md:text-lg lg:text-xl leading-relaxed">
+          <p className="mt-6 text-base md:text-lg lg:text-xl text-[#fcf46e] leading-relaxed">
             Light Bites | Educational Displays | Speakers <br />
             Runway Fashion Show
           </p>

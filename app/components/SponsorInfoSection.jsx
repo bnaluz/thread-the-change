@@ -17,7 +17,7 @@ const AccordionItem = ({ title, children, isOpen, onClick }) => {
     <div className="mb-4 border-b border-gray-200">
       <button
         onClick={onClick}
-        className="w-full text-left py-4 px-2 font-semibold text-[white] hover:bg-[#60b3c7] transition-colors"
+        className="w-full text-left py-4 px-2 font-semibold text-black hover:bg-[#60b3c7] transition-colors"
       >
         {title}
         <span className="float-right">{isOpen ? '-' : '+'}</span>
@@ -28,7 +28,7 @@ const AccordionItem = ({ title, children, isOpen, onClick }) => {
         className="overflow-hidden"
       >
         <div
-          className={`px-4 pb-4 text-[white] transition-opacity duration-300 ease-in-out ${
+          className={`px-4 pb-4 text-black transition-opacity duration-300 ease-in-out ${
             isOpen ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -75,7 +75,7 @@ const SponsorInfoSection = () => {
           Sponsorship Information
         </h2>
         <p
-          className={`text-lg text-white mb-12 text-center transition-opacity duration-1000 ease-in-out delay-100 ${
+          className={`text-lg text-black mb-12 text-center transition-opacity duration-1000 ease-in-out delay-100 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
