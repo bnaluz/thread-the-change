@@ -15,12 +15,26 @@ const Main = () => {
     <>
       <Header />
       <HeroSection />
-      <AboutTTCSection />
-      <InternsSection />
-      <SponsorsSection />
-      <AboutMNRSSection />
-      <TicketsSection />
-      <SponsorInfoSection />
+
+      <div className="section">
+        <AboutTTCSection />
+      </div>
+      <div className="section">
+        <InternsSection />
+      </div>
+      <div className="section">
+        <SponsorsSection />
+      </div>
+      <div className="section">
+        <AboutMNRSSection />
+      </div>
+      <div className="section">
+        <TicketsSection />
+      </div>
+      <div className="section">
+        <SponsorInfoSection />
+      </div>
+
       <Footer />
     </>
   );

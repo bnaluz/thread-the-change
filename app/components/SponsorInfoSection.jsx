@@ -17,7 +17,7 @@ const AccordionItem = ({ title, children, isOpen, onClick }) => {
     <div className="mb-4 border-b border-gray-200">
       <button
         onClick={onClick}
-        className="w-full text-left py-4 px-2 font-semibold text-[#60b3c7] hover:bg-[#fcf46e] transition-colors"
+        className="w-full text-left py-4 px-2 font-semibold text-[white] hover:bg-[#60b3c7] transition-colors"
       >
         {title}
         <span className="float-right">{isOpen ? '-' : '+'}</span>
@@ -28,7 +28,7 @@ const AccordionItem = ({ title, children, isOpen, onClick }) => {
         className="overflow-hidden"
       >
         <div
-          className={`px-4 pb-4 text-[#60b3c7] transition-opacity duration-300 ease-in-out ${
+          className={`px-4 pb-4 text-[white] transition-opacity duration-300 ease-in-out ${
             isOpen ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -65,17 +65,17 @@ const SponsorInfoSection = () => {
   };
 
   return (
-    <section id="sponsor-info" className="py-20 bg-white">
+    <section id="sponsor-info" className="py-20">
       <div className="container mx-auto px-4">
         <h2
-          className={`text-4xl font-bold mb-6 text-[#60b3c7] text-center transition-opacity duration-1000 ease-in-out ${
+          className={`text-4xl font-bold mb-6 text-[#FDF46E] text-center transition-opacity duration-1000 ease-in-out ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
           Sponsorship Information
         </h2>
         <p
-          className={`text-lg text-[#60b3c7] mb-12 text-center transition-opacity duration-1000 ease-in-out delay-100 ${
+          className={`text-lg text-white mb-12 text-center transition-opacity duration-1000 ease-in-out delay-100 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >

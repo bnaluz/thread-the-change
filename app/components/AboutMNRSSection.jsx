@@ -16,23 +16,23 @@ const AboutMNRSSection = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger scroll event on mount to check visibility
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <section id="about-mnrs" className="py-20 bg-white">
+    <section id="about-mnrs" className="py-20">
       <div className="container mx-auto px-4 text-center">
         <h2
-          className={`text-4xl font-bold mb-6 text-[#60b3c7] transition-opacity duration-1000 ease-in-out ${
+          className={`text-4xl font-bold mb-6 text-[#FDF46E] transition-opacity duration-1000 ease-in-out ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
           About My New Red Shoes
         </h2>
         <p
-          className={`text-lg text-[#60b3c7] transition-opacity duration-1000 ease-in-out delay-100 ${
+          className={`text-lg text-white transition-opacity duration-1000 ease-in-out delay-100 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -40,7 +40,7 @@ const AboutMNRSSection = () => {
           where every child thrives...
         </p>
         <p
-          className={`mt-6 text-lg text-[#60b3c7] font-semibold italic transition-opacity duration-1000 ease-in-out delay-200 ${
+          className={`mt-6 text-lg text-white font-semibold italic transition-opacity duration-1000 ease-in-out delay-200 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -49,7 +49,7 @@ const AboutMNRSSection = () => {
           needs...”
         </p>
         <p
-          className={`mt-6 text-[#60b3c7] transition-opacity duration-1000 ease-in-out delay-300 ${
+          className={`mt-6 text-white transition-opacity duration-1000 ease-in-out delay-300 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
