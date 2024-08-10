@@ -6,13 +6,23 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setIsOpen(false);
+    setTimeout(() => {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
   };
 
   return (
     <div className="fixed top-0 w-full bg-[#60b3c7] shadow-md z-50">
       <div className="container w-full mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
-        <a href="#landing" className="text-2xl font-bold text-white">
-          Thread the Change
+        <a href="#landing" className="flex items-center">
+          <img
+            src="/ttcLogo.png"
+            alt="Thread the Change"
+            className="h-14 w-auto"
+          />
         </a>
         <div className="md:hidden">
           <button
