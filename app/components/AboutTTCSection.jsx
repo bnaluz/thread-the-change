@@ -56,7 +56,7 @@ const AboutTTCSection = () => {
             </h3>
             <ul className="text-lg text-black space-y-2 mt-4">
               {[
-                'Malia Chen, Head Student Intern',
+                'Malia Chen, Lead Student Intern',
                 'Annika Gurnani, Graphic Design',
                 'Diya Karthik, Design',
                 'Maren Mulloy, Promotion',
