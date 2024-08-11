@@ -58,7 +58,7 @@ const Header = () => {
             About Us
           </a>
           <a
-            href="#sponsor"
+            href="#sponsor-info"
             className="block md:inline-block text-lg text-white hover:text-[#fcf46e] px-4 py-2"
             onClick={handleLinkClick}
           >

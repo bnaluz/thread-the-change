@@ -83,7 +83,7 @@ const AboutMNRSSection = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed bottom-16 right-16 z-50 bg-white p-4 rounded-lg shadow-lg max-w-sm w-full">
+        <div className="fixed bottom-16 right-12 z-50 bg-white p-4 rounded-lg shadow-lg max-w-sm w-full">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <button onClick={closeModal}>

@@ -92,7 +92,7 @@ const SponsorInfoSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn More About Sponsorship
+            Become a Sponsor
           </a>
         </div>
 
