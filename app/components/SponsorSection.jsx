@@ -42,18 +42,20 @@ const SponsorsSection = () => {
             Gold Level Sponsors
           </h3>
           <div className="flex justify-center items-center flex-wrap gap-16">
-            <div className="flex justify-center w-full md:w-1/3 lg:w-1/4">
+            <div className="flex justify-center w-full md:w-1/2 lg:w-1/3">
               <img
                 src="/ft.png"
                 alt="Franklin Templeton"
-                className="h-auto max-h-32 w-auto max-w-full"
+                className="h-auto w-auto max-w-full"
+                style={{ maxHeight: '240px' }}
               />
             </div>
-            <div className="flex justify-center w-full md:w-1/3 lg:w-1/4">
+            <div className="flex justify-center w-full md:w-1/2 lg:w-1/3">
               <img
                 src="mmgroup.png"
                 alt="Mandy Montoya & Monica Corman"
                 className="h-auto w-auto max-w-full"
+                style={{ maxHeight: '240px' }}
               />
             </div>
           </div>

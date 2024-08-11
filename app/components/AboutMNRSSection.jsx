@@ -40,7 +40,7 @@ const AboutMNRSSection = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h2 className="text-4xl font-bold mb-6 text-[red]">
+          <h2 className="text-4xl font-bold mb-6 text-black">
             About My New Red Shoes
           </h2>
           <p className="text-lg text-black mb-4">
@@ -60,7 +60,7 @@ const AboutMNRSSection = () => {
             <div className="mt-6">
               <button
                 onClick={openModal}
-                className="bg-red-600 text-white font-bold py-2 px-4 rounded shadow-lg hover:bg-red-700 transition"
+                className="bg-black text-white font-bold py-2 px-4 rounded shadow-lg hover:bg-[#4D4D4D] transition"
               >
                 Contact Us
               </button>
