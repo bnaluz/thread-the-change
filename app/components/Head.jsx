@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container w-full mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
         <a href="#landing" className="flex items-center">
           <img
-            src="/ttcLogo.png"
+            src="/ttcLogo3.png"
             alt="Thread the Change"
             className="h-14 w-auto"
           />
@@ -51,7 +51,7 @@ const Header = () => {
           } absolute top-full left-0 w-full bg-[#60b3c7] md:flex md:items-center md:relative md:top-0 md:bg-transparent md:w-auto md:mt-0 md:space-x-4 space-y-2 md:space-y-0`}
         >
           <a
-            href="#about"
+            href="#about-mnrs"
             className="block md:inline-block text-lg text-white hover:text-[#fcf46e] px-4 py-2"
             onClick={handleLinkClick}
           >
@@ -65,9 +65,10 @@ const Header = () => {
             Sponsor
           </a>
           <a
-            href="#tickets"
+            href="https://www.zeffy.com/ticketing/57130972-7260-498c-ad01-dfc0bea6c694"
             className="block md:inline-block text-lg text-white hover:text-[#fcf46e] px-4 py-2"
-            onClick={handleLinkClick}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Tickets
           </a>

@@ -68,7 +68,7 @@ const SponsorInfoSection = () => {
     <section id="sponsor-info" className="py-20">
       <div className="container mx-auto px-4">
         <h2
-          className={`text-4xl font-bold mb-6 text-[#FDF46E] text-center transition-opacity duration-1000 ease-in-out ${
+          className={`text-4xl font-bold mb-6 text-white text-center transition-opacity duration-1000 ease-in-out ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -83,6 +83,19 @@ const SponsorInfoSection = () => {
           audiences and ensures that a larger percentage of funds raised can be
           used to support the work of My New Red Shoes.
         </p>
+
+        {/* Sponsorship Page Button */}
+        <div className="text-center mb-12">
+          <a
+            href="https://www.zeffy.com/en-US/ticketing/7b377afb-2b45-4fbd-90ad-fb22fbc8665e"
+            className="inline-block bg-white text-[#60b3c7] text-lg font-bold py-2 px-6 rounded shadow hover:bg-[#fcf46e] hover:text-[#60b3c7] transition-colors border-2 border-[#60b3c7]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More About Sponsorship
+          </a>
+        </div>
+
         <div>
           <AccordionItem
             title="$10,000+ - Presenting Sponsor"

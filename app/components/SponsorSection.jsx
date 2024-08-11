@@ -38,7 +38,7 @@ const SponsorsSection = () => {
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <h3 className="text-3xl text-center font-semibold text-black mb-6">
+          <h3 className="text-3xl uppercase text-center font-semibold text-black mb-6">
             Gold Level Sponsors
           </h3>
           <div className="flex justify-center items-center flex-wrap gap-16">
@@ -66,7 +66,7 @@ const SponsorsSection = () => {
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <h3 className="text-2xl text-center font-semibold text-black mb-6">
+          <h3 className="text-2xl uppercase text-center font-semibold text-black mb-6">
             Silver Level Sponsor
           </h3>
           <div className="flex justify-center mx-auto items-center flex-wrap gap-12">
@@ -86,7 +86,7 @@ const SponsorsSection = () => {
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <h3 className="text-xl text-center font-semibold text-black mb-6">
+          <h3 className="text-xl text-center uppercase font-semibold text-black mb-6">
             Bronze Level Sponsor
           </h3>
           <div className="flex justify-center mx-auto items-center flex-wrap gap-12">
@@ -104,7 +104,7 @@ const SponsorsSection = () => {
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <h3 className="text-lg text-center font-semibold text-black mb-4">
+          <h3 className="text-lg uppercase text-center font-semibold text-black mb-4">
             In-kind Donors
           </h3>
           <div className="flex justify-center mx-auto w-full items-center flex-wrap gap-16">

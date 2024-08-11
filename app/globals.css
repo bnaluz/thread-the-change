@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'BrushScriptOpti';
+  src: url('/fonts/brush.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: linear-gradient(to right, #fcf46e 10%, #82c9d1 30%, #60b3c7 70%);
+  background: linear-gradient(to bottom, #fcf46e 10%, #82c9d1 40%, #60b3c7 70%);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

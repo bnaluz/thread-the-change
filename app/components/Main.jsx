@@ -9,6 +9,7 @@ import TicketsSection from './TicketsSection';
 import SponsorInfoSection from './SponsorInfoSection';
 import Footer from './Footer';
 import AboutTTCSection from './AboutTTCSection';
+import FloatingButton from './FloatingButton';
 
 const Main = () => {
   return (
@@ -19,21 +20,22 @@ const Main = () => {
       <div className="section">
         <AboutTTCSection />
       </div>
-      <div className="section">
+      {/* <div className="section">
         <InternsSection />
-      </div>
+      </div> */}
       <div className="section">
         <SponsorsSection />
       </div>
       <div className="section">
-        <AboutMNRSSection />
-      </div>
-      <div className="section">
-        <TicketsSection />
-      </div>
-      <div className="section">
         <SponsorInfoSection />
       </div>
+      <div className="section">
+        <AboutMNRSSection />
+      </div>
+      {/* <div className="section">
+        <TicketsSection />
+      </div> */}
+      <FloatingButton />
 
       <Footer />
     </>
