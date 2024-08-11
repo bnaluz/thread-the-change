@@ -34,7 +34,7 @@ const HeroSection = () => {
         ></div>
         <div className="relative text-center text-white">
           <img
-            src="/ttcLogo.png"
+            src="/ttcLogo3.png"
             alt="Thread the Change"
             className="mx-auto max-w-full h-auto"
             style={{ maxHeight: '15rem' }}
