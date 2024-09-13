@@ -24,14 +24,14 @@ const KeyNote = () => {
           <p className="text-lg text-black mb-4">
             Neha Samdaria is the founder of Aam The Label, a sustainable fashion
             brand for the ~25% of women with fuller hips and thighs than the
-            standard size chart. The Label's pants have a cult following and
+            standard size chart. The Label&#39;s pants have a cult following and
             have been featured in Forbes and Cosmopolitan for their
             revolutionary fit. While building her supply chain in India during
             the height of the COVID-19 pandemic, Neha witnessed the challenges
             faced by garment workers firsthand. Now, she is committed to
             advocating for fair labor practices and supply chain transparency.
-            Neha holds an MBA from Stanford and a Bachelor's in Science (Honors)
-            from Caltech.
+            Neha holds an MBA from Stanford and a Bachelor&#39;s in Science
+            (Honors) from Caltech.
           </p>
           <p className="text-lg font-semibold text-black mb-4">
             Check out her brand:
