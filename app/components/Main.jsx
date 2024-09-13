@@ -8,6 +8,8 @@ import SponsorInfoSection from './SponsorInfoSection';
 import Footer from './Footer';
 import AboutTTCSection from './AboutTTCSection';
 import FloatingButton from './FloatingButton';
+import KeyNote from './KeyNote';
+import RetailPartners from './RetailPartners';
 
 const Main = () => {
   return (
@@ -18,6 +20,9 @@ const Main = () => {
         <AboutTTCSection />
       </div>
       <div className="section">
+        <KeyNote />
+      </div>
+      <div className="section">
         <AboutMNRSSection />
       </div>
       <div className="section">
@@ -25,6 +30,9 @@ const Main = () => {
       </div>
       <div className="section">
         <SponsorsSection />
+      </div>
+      <div className="section">
+        <RetailPartners />
       </div>
       <FloatingButton />
       <Footer />
